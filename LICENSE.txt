@@ -1,0 +1,38 @@
+ORPHÉE — PROPRIETARY RIGHTS NOTICE
+
+Copyright © 2026 [EnylStray].
+All rights reserved.
+
+This notice applies to the original Orphée software, source code,
+binaries, documentation, artwork and other materials owned by the
+copyright holder (“Materials”).
+
+The Materials are proprietary. Their availability for viewing or
+download does not grant an open-source license or permission to
+install, execute, use, copy, modify, adapt, distribute, sublicense,
+sell, host, or create derivative works from them.
+
+Any such activity requires prior written permission from the
+copyright holder, unless expressly authorized by separate terms
+provided by the copyright holder.
+
+No permission is granted to use Orphée’s names, logos or branding
+to imply endorsement or affiliation.
+
+These restrictions do not limit rights that cannot lawfully be
+restricted, permissions necessarily granted under GitHub’s
+applicable terms for hosting this public repository, or rights
+under separately applicable third-party licenses.
+
+Third-party software, models, libraries and other components remain
+subject to their respective licenses. This notice does not replace
+or restrict those licenses.
+
+Any permissions previously granted remain governed by their
+original terms; this notice does not retroactively revoke them.
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE MATERIALS ARE
+PROVIDED “AS IS”, WITHOUT WARRANTIES, AND THE COPYRIGHT HOLDER
+DISCLAIMS LIABILITY ARISING FROM THEIR USE.
+
+Permission requests: enyl.stray@gmail.com
