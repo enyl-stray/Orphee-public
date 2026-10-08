@@ -1,4 +1,4 @@
-# Early beta 1.28.9
+# Early beta 1.28.10
 
 ## Verified on these installer bytes
 

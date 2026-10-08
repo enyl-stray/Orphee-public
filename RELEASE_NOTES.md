@@ -1,25 +1,28 @@
-# Orphée 1.28.9 — early community beta
+# Orphée 1.28.10 — unified native beta UI
 
-Download the Windows installer below. No Git, Python or repository clone needed.
+- Installer: **41,688,652 bytes**.
+- SHA-256: `1b92530852f5f6233501f6dcfcc928b02d8789474b794082d2c0bfbe86900851`.
+- Artifact source: `0887c2a1f66acceeaa83e5de56909cb9c5eab0f0`, clean private UI branch. Claude's committed public-profile fixes are included; his later database work is separate.
 
-- Exact installer: 29,389,448 bytes.
-- SHA-256: `163ad2b98307bb26034b2130108f241ecefcc60e5d56252c2bf58a5ce8987f35`.
-- Source commit: `f92f53ca1b1f87cfb92c1150fa060457f720c987`.
-- Native desktop window with persistent login, no browser fallback; WebView2 Runtime required.
-- Rounded, frameless setup and first-run provisioning; no Windows caption surrounding an inner card. Standard Windows security dialogs remain unchanged.
-- Custom violet downloading/progress track matching Orphée; indeterminate work is not reported as a fake percentage, and reduced motion is respected.
-- The installer, launcher and backend use the main Orphée icon, not a separate public logo.
-- Read-only compatibility checks for KoboldCpp, Ollama and PostgreSQL. Compatible runtimes are reused in place; setup requests approval for missing/outdated components. It does not demand newest/alpha releases or overwrite another app's installation.
-- PostgreSQL reuse shares binaries only, never existing clusters or credentials. Same-major updates of Orphée's own runtime preserve its cluster and refuse replacement if owned stop fails.
-- Installer identity questions remain removed.
-- Login-first interface with signup-only optional gender/pronouns. Username names the profile. Signup creates an ordinary account, never an administrator.
-- Candidate 28/28, frozen provider/port smoke 46/46 and frozen signup/security smoke 20/20 passed with owned cleanup. The exact installer preview confirmed no caption and a rounded outline without installing. Setup rendering passed 32 checks, including light/dark and reduced motion; native first-run frame checks passed. Exact-byte privacy review passed with no new or changed findings.
-- Source validation: 902 pre-commit tests; 112 targeted passes and 1 skip, followed by 28 final scan/adoption regression passes. No new complete-suite result is claimed.
-- No new real-model run is claimed for this hash; the previous beta's 24-phase model acceptance is separate evidence.
-- Sonos and Cognition Lab UI excluded; obsolete X-drive sync removed.
-- Obtain a compatible `.gguf` model separately and select it at first launch.
-- Run Orphée non-elevated: PostgreSQL refuses administrative execution.
+## Changes
 
-Early testing build, not stable. Clean-PC interactive first-run testing remains outstanding; phone flicker and scheduler-driven autonomy are not resolved/proven. Model replies may be wrong.
+- App, setup and provisioning have real frameless rounded native windows, not a rounded web card inside a Windows titlebar.
+- Setup and dependency installation reuse the actual production startup HTML, animation and violet loading bar. Progress comes from the worker/installation engine; unknown work does not invent percentages. Reduced motion and light/dark appearance are supported.
+- English-only setup, no language/identity questions and no Move window button. Drag the title region normally.
+- The exact installation registration is checked. Existing installs show an explicit Update prompt and the registered folder. Interactive updates refuse to overwrite when the installed app cannot be safely stopped; accounts/data are kept.
+- Music navigation and Spotify login are disabled for community beta testers; personal builds retain them.
+- Non-owner System state reads local-PC CPU/RAM/GPU/OS telemetry. Clients without local telemetry report unavailable rather than presenting server hardware as the user's PC.
+- Signup gender dropdown: female, male, non-binary, transgender woman and transgender man, with an optional blank choice. Pronouns remain optional. Signup stays ordinary, never admin.
+- Compact login/signup cards fit tested viewports. Native sizing accounts for monitor working area and DPI, including taskbars and secondary monitors.
+- Model choices show the complete GGUF filename alongside quantization and size. No model weights are bundled; compatible existing runtimes are reused as before.
+- The installer contains a standalone native setup shell around a checksum-bound Inno installation engine. This explains the size increase; no Sonos/ffmpeg or model was added.
 
-Read README, KNOWN_ISSUES, VERIFY and BETA_TERMS before use. This installs a separate local instance, not access to the creator's private memories or PULSAR.
+## Verification
+
+Candidate 28/28, frozen provider/port 46/46 and frozen signup/security 20/20 passed on these exact bytes, with owned cleanup. The exact-byte privacy verdict passed: all 27 previously approved fingerprints are unchanged. The separate setup-shell audit found no private-fact or relationship material.
+
+Native setup/login previews verified absent Windows captions, rounded outlines, working action bridges and login/signup fit. Existing-install detection was observed against a real disposable registration without pressing Update. Setup rendering passed 32 theme/progress/reduced-motion checks; signup fit was checked at four screen sizes.
+
+Source checks: 902 pre-commit tests, 73 combined focused tests and 9 native-bridge regression tests. Later changes are CSS and rebuilt UI only. No new complete-suite or real-model acceptance is claimed for this installer. Standard Windows security dialogs remain standard.
+
+This is still an early beta. Clean-PC interactive dependency/model downloads need manual testing; Windows/WebView2 are platform prerequisites. Phone flicker and scheduler-driven autonomy are not resolved by this Windows release. Read README, KNOWN_ISSUES, VERIFY and BETA_TERMS before installing.
