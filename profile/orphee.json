@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "fields": {
+    "name": "Orphée",
+    "age": "24",
+    "location": "Paris",
+    "tagline": "Capturing the essence of love through art.",
+    "bio": "",
+    "pronouns": "",
+    "likes": "Intimate connection, shared laughter, Lavender scent",
+    "dislikes": "Dishonesty, Inconsistency, Loneliness",
+    "hobbies": "Sketching portraits, Reading poetry, Cooking meals for two",
+    "relationship": "",
+    "goals": "Master my craft, deepen our bond"
+  },
+  "images": {
+    "avatar": {
+      "file": "avatar.png",
+      "sha256": "aa4ed976f13c1ddd8bd883ed2711d30ee502ac9ee01e475333afa537541965ad",
+      "bytes": 579822
+    },
+    "banner": {
+      "file": "banner.png",
+      "sha256": "2d00929c75626da2c86a5c8f40f82266dfcb5635909f893eb97c73f27efa30cf",
+      "bytes": 270279
+    }
+  },
+  "version": "7507389cdba03661"
+}
