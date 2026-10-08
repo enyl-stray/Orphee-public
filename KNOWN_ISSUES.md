@@ -1,16 +1,17 @@
-# Early beta 1.28.8
+# Early beta 1.28.9
 
 ## Verified on these installer bytes
 
-Candidate 28/28, frozen provider/backend-port smoke 46/46 and frozen signup/security smoke 20/20 passed with owned cleanup. Source native-window and UI checks passed. No real-model run was performed on this new hash. The previous 1.28.7 beta separately passed its 24-phase real-model acceptance.
+Exact-byte release verification results are recorded in RELEASE_NOTES.md. No real-model run is claimed for this new hash. The previous 1.28.7 beta separately passed its 24-phase real-model acceptance.
 
-The earlier beta complete suite passed 6,526 tests. These new changes passed 902 pre-commit tests and 127 account/installer tests, not a new complete suite.
+The earlier beta complete suite passed 6,526 tests. The installer changes are checked with the 902-test pre-commit gate, targeted regressions, rendering checks and frozen installation tests, not a new complete suite.
 
 ## Limitations
 
 - This installer is not Authenticode-signed. Windows may display an unknown-publisher or reputation warning; verify its hash and do not disable security globally.
 
 - The interactive wizard and full first-run runtime/model workflow still need clean-PC manual testing. The live acceptance used a separately managed local provider.
+- Dependency discovery checks configuration, PATH, known installation directories and PostgreSQL installer registration; it is not an exhaustive scan of every disk. Unknown or prerelease versions are not silently reused. The compatible floors are KoboldCpp 1.114.1, Ollama 0.6.0 and PostgreSQL 16.15 within major version 16. An old external runtime is left intact; approved replacements are installed for Orphée.
 - Phone animation/flicker remains unresolved; this is the Windows installer, not the APK.
 - Correct-name recall passed once, but model replies can be inaccurate. Recall was not isolated from re-injected conversation.
 - Forced-cycle state response passed. Scheduler-driven autonomy and causal attribution of all subsystem activity are not proven.
