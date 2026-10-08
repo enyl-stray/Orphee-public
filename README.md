@@ -1,6 +1,6 @@
 # Orphée — Windows early beta
 
-[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.7-beta.1/Orphee-Beta-Setup-1.28.7.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.7-beta.1)
+[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.8-beta.1/Orphee-Beta-Setup-1.28.8.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.8-beta.1)
 
 Orphée is an experimental local AI companion. This repository distributes the community beta, not private development source or the creator's personal installation.
 
@@ -10,7 +10,9 @@ Orphée is an experimental local AI companion. This repository distributes the c
 2. Run the installer normally on a 64-bit Windows PC. Do not launch Orphée using **Run as administrator**: PostgreSQL refuses elevated execution.
 3. Launch Orphée and allow setup to provision its runtime. Internet access and substantial free disk space are needed.
 4. Select a compatible local `.gguf` language model when prompted. Obtain the model separately under its own license: **no model weights ship in this installer**. Models may require several gigabytes of disk/RAM/VRAM; not every PC can run every quantization.
-5. Create the owner account and chat.
+5. Orphée opens in its own desktop window, not a browser. Choose **Sign up** from the login page to create an ordinary account. Your username names the profile; gender/pronouns are optional signup fields. The installer asks for none of these. Community signup never grants administrator powers.
+
+The desktop window requires Microsoft Edge WebView2 Runtime. A missing runtime produces an error, not a browser fallback. First-run downloads use an app-styled progress window.
 
 This creates **your own separate installation**. It does not access the creator's PULSAR or private accounts/memories. Sonos implementation/UI and the Cognition Lab are excluded from community builds. This is a Windows installer, not an Android APK.
 

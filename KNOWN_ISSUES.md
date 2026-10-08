@@ -1,10 +1,10 @@
-# Early beta 1.28.7
+# Early beta 1.28.8
 
 ## Verified on these installer bytes
 
-Static/frozen checks passed. Real Stheno-model acceptance passed 24/24 phases, exit 0, with owned cleanup: conversation, source-backed memory, Library/PostgreSQL identity/provenance parity, clearing, restart, correlated retrieval and correct-name reply.
+Candidate 28/28, frozen provider/backend-port smoke 46/46 and frozen signup/security smoke 20/20 passed with owned cleanup. Source native-window and UI checks passed. No real-model run was performed on this new hash. The previous 1.28.7 beta separately passed its 24-phase real-model acceptance.
 
-Complete suite before the final harness correction: 6,526 passed, 20 skipped, exit 0. The punctuation correction then passed 159 focused tests and 896 pre-commit tests.
+The earlier beta complete suite passed 6,526 tests. These new changes passed 902 pre-commit tests and 127 account/installer tests, not a new complete suite.
 
 ## Limitations
 
