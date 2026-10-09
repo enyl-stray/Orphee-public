@@ -1,6 +1,6 @@
 # Orphée — Windows early beta
 
-[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.11-beta.1/Orphee-Beta-Setup-1.28.11.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.11-beta.1)
+[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.12-beta.1/Orphee-Beta-Setup-1.28.12.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.12-beta.1)
 
 Orphée is an experimental local AI companion. This repository distributes the community beta, not private development source or the creator's personal installation.
 
@@ -16,7 +16,9 @@ The desktop window requires Microsoft Edge WebView2 Runtime. A missing runtime p
 
 Compatibility checks cover KoboldCpp, Ollama and PostgreSQL. Existing third-party installations are not overwritten or stopped. Reusing PostgreSQL means sharing its compatible binaries only: Orphée creates its own database cluster, credentials and port, never adopts your existing databases. Windows/WebView2 are platform prerequisites, not automatically upgraded drivers or frameworks.
 
-Setup and first-launch provisioning open centered. Windows 11 uses compositor-rounded edges without a jagged clipping mask or outer border. The violet progress meter fills left-to-right and holds its last measured percentage during work without a percentage. Installer failure logs are retained under `%LOCALAPPDATA%\Orphee\setup-logs`; inspect them for private paths before sharing.
+Setup, first-launch provisioning and the app use the main Orphée application's real Rust/Tauri transparent, borderless, shadow-free window configuration and open centered. There is no Windows-version-dependent GDI rounded-mask fallback. The violet progress meter fills left-to-right and holds its last measured percentage during work without a percentage. Remaining at 0% before file copying begins is not a simulated download. Installer failure logs are retained under `%LOCALAPPDATA%\Orphee\setup-logs`; inspect them for private paths before sharing.
+
+Updates do not ask Windows Restart Manager to shut down unrelated applications or model servers. Only this installation's ownership-aware launcher stops its own services; byte-identical destination files are skipped rather than overwritten. A genuinely locked changed file still needs its owning application closed—setup never kills processes by name.
 
 Signup has an optional gender dropdown: female, male, non-binary, transgender woman or transgender man; pronouns remain optional. Login/signup layouts are compact and the native window is bounded to the monitor's usable area. Model download choices show the complete GGUF filename, not only its quantization.
 
