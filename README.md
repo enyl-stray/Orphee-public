@@ -1,6 +1,6 @@
 # Orphée — Windows early beta
 
-[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.12-beta.1/Orphee-Beta-Setup-1.28.12.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.12-beta.1)
+[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.13-beta.1/Orphee-Beta-Setup-1.28.13.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.13-beta.1)
 
 Orphée is an experimental local AI companion. This repository distributes the community beta, not private development source or the creator's personal installation.
 

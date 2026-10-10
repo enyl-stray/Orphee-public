@@ -1,4 +1,4 @@
-# Early beta 1.28.12
+# Early beta 1.28.13
 
 ## Verified on these installer bytes
 
@@ -22,3 +22,5 @@ The earlier beta complete suite passed 6,526 tests. The installer changes are ch
 - No model weights are bundled. Provisioning and model selection need time and disk space.
 
 This is not a stable-release claim and does not deploy personal features or PULSAR.
+
+Accounts belong to their installation: standalone beta accounts are not automatically shared with PULSAR. Previously overwritten avatar files cannot be recovered by this update; upload the picture again if necessary.
