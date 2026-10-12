@@ -1,27 +1,29 @@
-# Orphée 1.28.13 — local status, accounts and model settings
+# Orphée 1.28.14 — one central Orphée
 
-Installer: **35,303,376 bytes**.
-SHA-256: `8b12ba84bc267c4f18e28a2ecf89fc9459a512d46f1deed6f588a400fce79102`.
-Private source: `da49d718671375951168c75368ea9aca785dddd6`. PULSAR was not deployed.
+This Windows beta is a native client of **https://orphee.enylstray.com**, not a new independent Orphée. The release's exact hash and size are in VERIFY.md and SHA256SUMS.txt.
+
+Installer: **35,461,075 bytes**. SHA-256: `3e150fa479f7ce3645e82cfd059c00471631c153d0c90550c10ba552ae529557`.
+Private source: `7087c87cc96258ca6e9ffc86f0dda67dd806680c`; build `20261012-132134`. Only the non-deploying beta source branch was pushed.
 
 ## Changes
 
-- Bundles declared local hardware telemetry dependencies and uses a real CPU sample.
-- Removes the duplicate main-app titlebar while keeping login controls.
-- Shows the actual profile relationship instead of inventing "loves" from the username.
-- Restricts burp sound controls to the verified owner in the personal edition.
-- Clearly separates selected and running models, simplifies downloads, and blocks the first-run start action when a provider already has a model.
-- Refreshes installation-local account lists and pictures, reads current profiles, and saves account-specific avatars rather than overwriting a shared image.
-- Retains the Tauri setup/provisioning style and safe ownership-aware updates. No model or private account data ships.
+- Connects to her central brain and continuing life without Tailscale or local model downloads.
+- Uses the main application's transparent, frameless Rust/Tauri window and persistent WebView session.
+- Closing hides to the tray. Open restores the client; Quit exits it without shutting down the central service.
+- Keeps login controls available when the central interface predates the packaged native controls. Existing server controls take precedence.
+- Refuses local model/database provisioning and local owner creation. A failed connection never starts another local brain.
+- Leaves old standalone account data intact, without uploading or merging it. Old local credentials are not central credentials.
+- Retains English setup, measured copy progress, update detection and ownership-aware legacy cleanup.
+- Identifies its health request explicitly and distinguishes access rejection from an unavailable service.
 
 ## Verification of these exact bytes
 
-- Artifact/privacy: **11 checks, zero failures**, candidate acceptance and unchanged approved privacy findings.
-- Actual install → update → uninstall: **12/12**, including survival of an unrelated process holding an unchanged DLL.
-- Frozen provider/backend-port configuration: **46/46**, with no model, backend or PostgreSQL started.
-- Bundled frontend: **22 browser checks**. Native login/signup: **7/7**, using synthetic HTTP.
-- Frozen setup renderer opened and cancelled successfully under an isolated profile.
-- Compiled telemetry ran with the payload's own native psutil extension and returned CPU, RAM and GPU information; this was not full backend startup.
-- Source: **112 targeted tests** and **902 pre-commit tests**, all passing.
+- Candidate/privacy checks: **29/29**, including Sonos exclusion, declared dependencies and unchanged personal packaged installation.
+- Source root pre-commit gate: **902 tests, zero failures**, plus targeted central-client and tray regressions. This is not a new full central-server suite.
+- Compiled native tray lifecycle was exercised against inert service callbacks, not a real model.
+- Exact installed client: **16/16 checks**, covering anonymous central login, same-origin native bridge, login fitting the window, visible window controls, local-provisioning refusal and no local services. Silent uninstall and registration cleanup also passed.
+- Bundled UI fixtures were checked separately. The actual central interface comes from PULSAR; publishing this client does not deploy source-side UI/backend fixes there.
 
-No new complete-suite or real-model acceptance is claimed. Full interactive first-run downloads still need clean-PC manual testing, including a retest on the reporter's Windows 10 PC. Phone flicker, factual accuracy and scheduler-driven autonomy retain their documented limitations. The installer is unsigned. PULSAR and the personal packaged installation remain untouched.
+An earlier anonymous-render check failed without sufficient diagnostic output; a diagnostic rerun rendered correctly. Its cause remains unestablished, and failed evidence was retained. No claim of authenticated chat, signup, inference, streaming, reconnection, scheduler behavior or complete multi-user privacy certification follows from the anonymous smoke.
+
+The installer is unsigned. Internet and WebView2 are required. A fresh Windows 10/11 PC still needs manual testing. Phone flicker and model factual accuracy remain separate issues. PULSAR, live accounts and the personal packaged installation were not deployed or modified by this release.
