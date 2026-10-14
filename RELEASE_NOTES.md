@@ -1,4 +1,17 @@
-# Orphée 1.28.14 — one central Orphée
+# Orphée 1.28.15 — local GPU, one shared Orphée
+
+- Selected installed model loads after sign-in; explicit Load / Retry and loaded state come first in AI Model settings. Hardware/download recommendations are secondary.
+- Account/device-bound outbound compute uses your local engine while accounts, memory, identity and life stay central. No local PostgreSQL or separate brain.
+- Logout resets model context; tray and Quit stop only the client's OS-owned engine.
+- Backend deployment now pauses new work, lets admitted tasks finish, and resumes after a backend-only restart. The client reconnects without unnecessarily reloading its selected model.
+
+Installer: **35,482,029 bytes**. SHA-256: `51fca6cb96a2c602f625154176c39e0a648b723715eb6737d6e9716eb1169d79`.
+Native source: `d699808e3542c9c645e8b6f4ff8d57908063c7ee`; build `20261014-165216`.
+Matching central source: `e04b2a9c04c3dbf9153ab593d12809565e4615e1`, deployed and health checked. KoboldCpp and Ollama service identities stayed unchanged.
+
+Validation: 902 native and 914 server pre-commit tests, focused account/ownership/metadata tests, browser component and reconnect checks, 11 artifact/privacy checks, and the compiled desktop API through the exact bundled Tauri renderer. The real Stheno source-level transport check and owned cleanup passed in 15.1 seconds. This is not a complete frozen-installer conversation/memory/fidelity acceptance or fresh-PC manual test. Life/time-of-day remains pending. No private source or account data is published here.
+
+## Previous release: 1.28.14 — one central Orphée
 
 This Windows beta is a native client of **https://orphee.enylstray.com**, not a new independent Orphée. The release's exact hash and size are in VERIFY.md and SHA256SUMS.txt.
 
