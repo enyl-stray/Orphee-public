@@ -1,10 +1,10 @@
-# Early beta 1.28.15 — central client with local compute
+# Early beta 1.28.16 — central client with local compute
 
 ## Verified on these installer bytes
 
-Exact-byte verification results and the bounded source-level real-model transport check are recorded in RELEASE_NOTES.md. These are not a complete installed conversation/factual-fidelity acceptance.
+The exact artifact gate passed 29/29 checks, anonymous installed native-client checks passed 16/16, and a disposable 1.28.15 → 1.28.16 upgrade passed 12/12 with synthetic data preserved and owned cleanup completed. Details and the exact installer hash are in RELEASE_NOTES.md and VERIFY.md.
 
-The source passed the 902-test root pre-commit gate and targeted regressions. This is not a new complete-suite result for Claude's separately maintained central server.
+The previous version's real-model result does not establish acceptance of this new installer. Real-model inference, authenticated conversation, signup, streaming and full life/memory acceptance were not run on these bytes. Focused source, browser and native-window checks are not a complete central-server or real-device certification.
 
 ## Limitations
 
@@ -20,8 +20,8 @@ The source passed the 902-test root pre-commit gate and targeted regressions. Th
 - The interface comes from the server. Server-side profile pictures, local telemetry presentation, behavior and account handling can require a separate server update; this installer does not redeploy PULSAR.
 - Packaged installations cannot update by Git pull; download future installers from Releases.
 - Closing hides the client in the tray and suspends its owned local model; restoring reloads it. Quit exits the client and its owned engine, not her central brain.
-- The central life/time-of-day correction remains pending. The phone flicker, factual fidelity and a fresh-PC manual installation are not claimed fixed by this release.
+- Central life and time-of-day behavior was not revalidated by this installer release. Phone flicker, factual fidelity and a fresh-PC manual installation are not claimed fixed by it.
 
-This is not a stable-release claim. The matching scoped central compute/backend patch was deployed separately; no personal model service was restarted.
+This is not a stable-release claim. Publishing the client does not deploy server-side source changes or restart the central service or model services.
 
 Previously overwritten avatar files cannot be recovered by this update. Existing standalone beta accounts do not automatically become central accounts.

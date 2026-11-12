@@ -1,4 +1,50 @@
-# Orphée 1.28.15 — local GPU, one shared Orphée
+# Orphée 1.28.16 — refreshed Windows beta
+
+This refresh retains one central Orphée, account-bound local reply computation,
+the frameless native window and the tray lifecycle.
+
+- Refreshes the packaged client from current source while preserving beta-native
+  setup and account-bound compute support.
+- Binds local token counting and generation to the same owned model session.
+- Rebuilds the community interface independently and excludes development test
+  fixtures from package inputs.
+- Preserves the central-home connection, local-provisioning refusal and
+  ownership-aware close, restore and Quit behavior.
+- Updating from 1.28.15 preserved synthetic local data and installed every file
+  of the new payload with matching hashes.
+
+The interface and ongoing behavior come from the central home. Publishing this
+installer does not deploy source-side prompt or server changes there.
+
+## Exact installer
+
+- File: `Orphee-Beta-Setup-1.28.16.exe`
+- Size: **36,081,264 bytes**
+- SHA-256: `319766be8cc075bdf6304a281349d62d193dcb7a7e7fd1078d64800b8210d4df`
+- Source: `46d4b55d5981f1c5c4a18ffc12075b32cc45e054`
+- Build: `20261112-144632`
+
+## Verification and limits
+
+The exact artifact gate passed **29/29** checks. The installed anonymous native
+client passed **16/16**, and the disposable **1.28.15 → 1.28.16** upgrade passed
+**12/12**, including data preservation, exact payload hashes and owned cleanup.
+The exact-artifact privacy review passed with no new or changed unreviewed
+constants. Phone/desktop, light/dark and reduced-motion browser checks passed;
+the compiled native lifecycle was also exercised with inert service callbacks.
+
+This remains an **experimental prerelease**. Real-model inference, authenticated
+conversation, signup, streaming and complete life/memory acceptance were not run
+on this installer. Automated installation and upgrade checks used the build host
+and synthetic data; fresh-PC and Windows 10 manual testing remain outstanding.
+No complete multi-user privacy or real-device performance certification is claimed.
+
+The installer is unsigned. Internet and WebView2 are required; model downloads
+are separate. No private source, account data, credentials or raw test evidence
+is included in this public release.
+
+
+## Previous release: Orphée 1.28.15 — local GPU, one shared Orphée
 
 - Selected installed model loads after sign-in; explicit Load / Retry and loaded state come first in AI Model settings. Hardware/download recommendations are secondary.
 - Account/device-bound outbound compute uses your local engine while accounts, memory, identity and life stay central. No local PostgreSQL or separate brain.

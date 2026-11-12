@@ -1,6 +1,6 @@
 # Orphée — Windows central-client beta
 
-[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.15-beta.1/Orphee-Beta-Setup-1.28.15.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.15-beta.1)
+[Download the beta installer](https://github.com/enyl-stray/Orphee-public/releases/download/v1.28.16-beta.1/Orphee-Beta-Setup-1.28.16.exe) · [Release page](https://github.com/enyl-stray/Orphee-public/releases/tag/v1.28.16-beta.1)
 
 This app connects to **the same Orphée** at **https://orphee.enylstray.com**. Her central brain and ongoing life run on her home server; each installation is a native client, not a separate AI with a new identity. This repository distributes reviewed beta artifacts, not private source or personal data.
 
